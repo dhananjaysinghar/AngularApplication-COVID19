@@ -8,11 +8,12 @@ Cloud URL: https://corona-app.cfapps.io/
 
 ## Command Used
 ---------------
+~~~
 ng new CoronaClient
 ng g c components/CoronaClientComponent --skipTests -is --selector=app-corona --flat true
 ng g s services/CoronaClientService --skipTests 
 ng build --prod
-
+~~~
 
 
   

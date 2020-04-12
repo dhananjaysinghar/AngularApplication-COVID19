@@ -1,0 +1,8 @@
+---
+applications:
+- name: corona-app
+  instances: 1
+  memory: 512M
+  disk-quote: 1024M
+  buildpack: staticfile_buildpack
+  domain: cfapps.io

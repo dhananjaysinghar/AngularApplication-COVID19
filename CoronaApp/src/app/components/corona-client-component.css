@@ -1,0 +1,28 @@
+#dj {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#dj td,
+#dj th {
+    border: 1px solid rgb(189, 31, 31);
+    padding: 8px;
+    text-align: center;
+}
+
+#dj tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#dj tr:hover {
+    background-color: #ddd;
+}
+
+#dj th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+}

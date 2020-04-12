@@ -1,0 +1,47 @@
+<!doctype html>
+
+<body>
+    <div>
+        <div>
+            <h3>Covid19 Global Information on Date : {{currrentDate}}</h3>
+        </div>
+
+        <div>
+            <table id="dj">
+
+                <thead>
+                    <tr>
+                        <th>Sr. No</th>
+                        <th style="text-align:left;">Country</th>
+                        <th>Total Cases</th>
+                        <th>Total Death</th>
+                        <th>Today Found</th>
+                        <th>Today Death</th>
+                        <th>Recovered</th>
+                        <th>Now Active</th>
+                        <th>Critical</th>
+                        <th>Flag</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let e of data;let i =index ">
+                        <td>{{i+1}}</td>
+                        <td style="text-align:left;"><b>{{e.country}}</b></td>
+                        <td><b>{{e.cases}}</b></td>
+                        <td>{{e.deaths}}</td>
+                        <td>{{e.todayCases}}</td>
+                        <td>{{e.todayDeaths}}</td>
+                        <td>{{e.recovered}}</td>
+                        <td><b>{{e.active}}</b></td>
+                        <td>{{e.critical}}</td>
+                        <td><img width="40px" height="20px" src="{{e.countryInfo.flag}}"></td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+        <div>
+            <h4><b>Created By Dhananjay</b></h4>
+        </div>
+    </div>
+</body>

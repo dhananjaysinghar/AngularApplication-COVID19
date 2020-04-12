@@ -6,7 +6,7 @@ Cloud URL: https://corona-app.cfapps.io/
 ~~~~
 
 
-##Command Used
+## Command Used
 ---------------
 ng new CoronaClient
 ng g c components/CoronaClientComponent --skipTests -is --selector=app-corona --flat true
@@ -29,13 +29,13 @@ applications:
   buildpack: staticfile_buildpack
   domain: cfapps.io
 ~~~
-##Use below comand to push to PCF
+## Use below comand to push to PCF
 ~~~
 cf login -a http://api.run.pivotal.io -u %USERNAME% -p %PASSWORD%
 cf push
 ~~~
 
-##Consumed API
+## Consumed API
 ~~~
 Swagger Docs: https://corona.lmao.ninja/docs/
 URL: https://corona.lmao.ninja/v2/countries
